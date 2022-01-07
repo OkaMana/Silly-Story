@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日は、とても暑かった。 :insertx:は散歩に出かけた。 :inserty:に到着すると、:insertz:。 Bobはそれを見たが驚かなかった。でも体重300 poundsの:insertx:はとても驚いていた。';
+const storyText = 'その日は、とても暑かった。 :insertx:は散歩に出かけた。 :inserty:に到着すると、:insertz:。 宮崎駿はそれを見たが驚かなかった。でも体重300 poundsの:insertx:はとても驚いていた。';
 const insertX = ['トトロ', 'カオナシ', 'ポニョ'];
 const insertY = ['トウモロコシ畑', '油屋', '海辺'];
 const insertZ = ['メイちゃんが泣いていた', '八百万の神様がいた', '宗介が釣りをしていた'];
@@ -28,7 +28,7 @@ function result() {
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
+    newStory = newStory.replace('宮崎駿', name);
   }
 
   if (document.getElementById("uk").checked) {
