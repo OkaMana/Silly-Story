@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日は、とても暑かった。 :insertx:は散歩に出かけた。 :inserty:に到着すると、:insertz:。 宮崎駿はそれを見たが驚かなかった。でも体重300 poundsの:insertx:はとても驚いていた。';
+const storyText = 'その日は、とても暑かった。 :insertx:は散歩に出かけた。 :inserty:に到着すると、:insertz:。 宮崎駿はそれを見たが驚かなかった。でも体重300ポンドの:insertx:はとても驚いていた。';
 const insertX = ['トトロ', 'カオナシ', 'ポニョ'];
 const insertY = ['トウモロコシ畑', '油屋', '海辺'];
 const insertZ = ['メイちゃんが泣いていた', '八百万の神様がいた', '宗介が釣りをしていた'];
@@ -35,7 +35,7 @@ function result() {
     const weight = `${Math.round(300*0.0714286)} stone`;
     const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
     newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('300ポンド', weight);
   }
 
   story.textContent = newStory;
